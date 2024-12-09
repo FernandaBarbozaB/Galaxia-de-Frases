@@ -39,14 +39,14 @@ function generatePhrase() {
   }, 500);
 }
 
-// Adiciona o evento de clique no botão
+
+
+function createStars() {
+  const starCount = 100; // Número de estrelas// Adiciona o evento de clique no botão
 button.addEventListener('click', generatePhrase);
 
 quoteElement.classList.add('fade-in');
 setTimeout(() => quoteElement.classList.remove('fade-in'), 1000);
-
-function createStars() {
-  const starCount = 100; // Número de estrelas
   const body = document.body;
 
   for (let i = 0; i < starCount; i++) {
