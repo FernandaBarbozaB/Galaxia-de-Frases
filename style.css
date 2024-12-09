@@ -1,0 +1,121 @@
+/* Corpo da página */
+body {
+  font-family: 'Parkinsans', sans-serif; /* Fonte do Google */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: 100vh; /* Altura da tela */
+  
+  /* Substitua o link abaixo pelo link da sua imagem de fundo */
+  background: url('https://images6.alphacoders.com/641/thumb-1920-641430.jpg') no-repeat center center fixed;
+  background-size: cover; /* Faz a imagem preencher o fundo */
+  
+  color: #fff; /* Texto branco */
+  overflow: hidden;
+}
+
+/* Contêiner central */
+#container {
+  text-align: center; /* Centraliza o texto dentro do contêiner */
+}
+
+/* Estilo da frase */
+#quote {
+  font-size: 24px;
+  margin-bottom: 20px; /* Espaço entre frase e botão */
+}
+
+/* Botão */
+button {
+  background: linear-gradient(90deg, #add8e6, #87cefa); /* Gradiente azul pastel */
+  color: #000; /* Texto preto */
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none; /* Remove borda */
+  border-radius: 5px; /* Borda arredondada */
+  cursor: pointer; /* Cursor de mão */
+  transition: background 1s ease, transform 0.3s ease; /* Transições suaves */
+}
+
+/* Botão ao clicar */
+button:active {
+  background: linear-gradient(90deg, #ffb6c1, #ff69b4); /* Gradiente rosa pastel */
+  transform: scale(1.1); /* Aumenta ligeiramente o tamanho */
+}
+
+
+#quote {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 
+               0 0 20px rgba(173, 216, 230, 0.5);
+}
+
+.fade-in {
+  animation: fadeSlide 1s ease-in-out;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  #quote {
+    font-size: 18px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+body {
+  position: relative;
+  overflow: hidden; /* Para evitar barras de rolagem desnecessárias */
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  animation: twinkle 2s infinite ease-in-out;
+  opacity: 0.8;
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fadeSlide 1s ease-in-out;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
